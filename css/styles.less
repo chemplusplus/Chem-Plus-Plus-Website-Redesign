@@ -1,0 +1,118 @@
+@import "variables.less"; // Import variables and mixins from external file. This contains the bradning information necessary to make this process more efficent.
+// Base Styling
+
+body {
+  // Sets margin and padding to 0 so that elements such as navbar do not show white space
+  margin: 0;
+  padding: 0;
+}
+
+// Add font mixins to all corresponding variables
+h1 {
+  .font-heading();
+  .font-heading-1();
+}
+
+h2 {
+  .font-heading();
+  .font-heading-2();
+}
+
+h3 {
+  .font-heading();
+  .font-heading-3();
+}
+
+h4 {
+  .font-heading();
+  .font-heading-4();
+}
+
+h5 {
+  .font-heading();
+  .font-heading-5();
+}
+
+h6 {
+  .font-heading();
+  .font-heading-6();
+}
+
+p {
+  .font-body();
+  .font-body-1();
+}
+
+button {
+  .font-button();
+}
+
+span {
+  .font-caption();
+}
+
+// Navbar
+
+nav {
+  .font-heading();
+  background-color: @color-reserve;
+  // Flex Container for navbar
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media all and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    i,
+    svg {
+      font-weight: 500;
+      font-size: 1.063rem;
+      color: @color-font-primary;
+    }
+
+    a {
+      color: @color-font-primary;
+      text-decoration: none;
+    }
+
+    li {
+      flex: auto;
+      padding: 0.5rem;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: @color-reserve-tint;
+        color: @color-font-primary-tint;
+      }
+    }
+
+    .nav-logo-container {
+      display: flex;
+      align-items: center;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 2rem;
+      margin-right: 1rem;
+      cursor: pointer;
+      text-align: center;
+      background-color: @color-reserve-2;
+    }
+
+    .nav-logo-text {
+      color: @color-reserve;
+    }
+  }
+}

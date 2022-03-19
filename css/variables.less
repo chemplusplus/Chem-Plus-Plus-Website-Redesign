@@ -1,0 +1,124 @@
+// Define base variables and mixins for branding such as color and fonts
+// Colors
+
+@color-primary: #124559;
+@color-primary-tint: #103e50;
+@color-secondary: #598392;
+@color-secondary-tint: #507683;
+@color-tertiary: #aec3b0;
+@color-tertiary-tint: #9db09e;
+@color-reserve: #eff6e0;
+@color-reserve-tint: #d7ddca;
+@color-reserve-2: #2e3136;
+@color-reserve-2-tint: #292c31;
+@color-font-primary: #01161e;
+@color-font-primary-tint: #01141b;
+@color-font-link: #6be7c2;
+@color-font-link-tint: #60d0af;
+
+// Fonts
+
+.font-heading {
+  // Define universal attributes to all font-headings
+  color: @color-font-primary;
+  font-family: "Open Sans", sans-serif;
+  // Define individual heading fonts from 1-6
+  .font-heading-1 {
+    font-weight: 300;
+    font-size: 5.063rem;
+    letter-spacing: -1.5px;
+  }
+
+  .font-heading-2 {
+    font-weight: 300;
+    font-size: 3.188rem;
+    letter-spacing: -0.5px;
+  }
+
+  .font-heading-3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+  }
+
+  .font-heading-4 {
+    font-weight: 400;
+    font-size: 1.813rem;
+    letter-spacing: 0.25px;
+  }
+
+  .font-heading-5 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 0px;
+  }
+
+  .font-heading-6 {
+    font-weight: 500;
+    font-size: 1.063rem;
+    letter-spacing: 0.15px;
+  }
+}
+
+.font-subtitle {
+  // Define universal attributes to all font-subtitles
+  color: @color-font-primary;
+  font-family: "Open Sans", sans-serif;
+  // Define individual subtitle fonts from 1-2
+  .font-subtitle-1 {
+    font-weight: 400;
+    font-size: 0.813rem;
+    letter-spacing: 0.15px;
+  }
+
+  .font-subtitle-2 {
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.1px;
+  }
+}
+
+.font-body {
+  // Define universal attributes to all font-body elements
+  color: @color-font-primary;
+  font-family: "Montserrat", sans-serif;
+  // Define individual body fonts from 1-2
+  .font-body-1 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+  }
+
+  .font-body-2 {
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.25px;
+  }
+}
+
+.font-button {
+  // Define universal attributes for all font-button elements
+  color: @color-font-primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 1.25px;
+}
+
+.font-caption {
+  // Define universal attributes for all font-caption elements
+  color: @color-font-primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.625rem;
+  letter-spacing: 0.4px;
+}
+
+.font-overline {
+  // Define universal attributes for all font-overline elements
+  color: @color-font-primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.563rem;
+  letter-spacing: 1.5px;
+}
